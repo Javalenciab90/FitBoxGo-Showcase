@@ -93,10 +93,6 @@ La aplicación utiliza una arquitectura modularizada para maximizar la reutiliza
 
 ### 🚀 Disponibilidad y Lanzamiento
 
-**FitBoxGo** inicia su camino enfocándose en la comunidad de atletas de **Colombia** 🇨🇴. Esta primera versión está totalmente optimizada en **español**, adaptándose al lenguaje y las necesidades de los boxes y gimnas
-
-### 🚀 Disponibilidad y Lanzamiento
-
 **FitBoxGo** inicia su camino enfocándose en la comunidad de atletas de **Colombia** 🇨🇴. Esta primera versión está totalmente optimizada en **español**, adaptándose al lenguaje y las necesidades de los boxes y gimnasios locales.
 
 Actualmente en etapas finales de pruebas y proceso de aprobación oficial.
