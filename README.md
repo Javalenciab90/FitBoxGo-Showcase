@@ -1,4 +1,4 @@
-# 🇪🇸 FitBoxGo: Optimiza tu Fuerza con Precisión
+# 🇨🇴 FitBoxGo: Optimiza tu Fuerza con Precisión
 
 **FitBoxGo** es la herramienta definitiva para atletas que buscan eliminar las conjeturas en su entrenamiento de fuerza. Diseñada para centralizar tu progreso, la app automatiza los cálculos más complejos del gimnasio para que tú solo te enfoques en levantar.
 
@@ -15,12 +15,24 @@
 
 ---
 
-### 🎥 Demo: Sincronización en Tiempo Real
+### 🎥 Demo: Recorrido Completo y Arquitectura (3:19 min)
 
-<p align="center">
-  <video src="assets/video/demo_sync.mp4" width="800" autoplay loop muted>
-  </video>
-</p>
+[![Mira la Demo de FitBoxGo](https://img.youtube.com/vi/XLpzB0UJNzo/maxresdefault.jpg)](https://www.youtube.com/watch?v=XLpzB0UJNzo)
+
+> 💡 **Tip:** Haz clic en la imagen superior para ver el flujo completo de la aplicación, incluyendo la sincronización en tiempo real y el sistema de Onboarding.
+
+#### 🕒 Guía de la Demo:
+* **0:00** - Iniciática de sesión -  Acepto términos y condiciones.
+* **0:24** - Ingreso un nuevo registro.
+* **0:35** - Sincronización Real-time (iOS Light Mode vs Android Dark Mode).
+* **1:00** - Eliminar un registo.
+* **1:12** - Onboarding para uso de calculadora (Paso 1).
+* **1:23** - Onboarding para uso de calculadora (Paso 2).
+* **1:41** - Onboarding para uso de calculadora (Paso 3).
+* **1:51** - Visualización de discos (Kg ó lb).
+* **2:13** - Edición perfil.
+* **2:32** -  Navegación Menú lateral (Drawer menu).
+* **3:19** - Fin
 
 **¿Qué estás viendo en esta demo?**
 Observa la interoperabilidad entre un **iPhone (Light Mode)** y un emulador de **Android (Dark Mode)**. Al registrar un levantamiento, se muestra la sincronización con la base de datos en ambas pantallas sin latencia. La lógica compartida calcula automáticamente los porcentajes y la distribución de discos de forma instantánea.
@@ -81,6 +93,10 @@ La aplicación utiliza una arquitectura modularizada para maximizar la reutiliza
 
 ### 🚀 Disponibilidad
 
+### 🚀 Disponibilidad y Lanzamiento
+
+**FitBoxGo** inicia su camino enfocándose en la comunidad de atletas de **Colombia** 🇨🇴. Esta primera versión está totalmente optimizada en **español**, adaptándose al lenguaje y las necesidades de los boxes y gimnasios locales.
+
 Actualmente en etapas finales de pruebas y proceso de aprobación oficial.
 
 | Plataforma | Estado |
@@ -99,8 +115,8 @@ Este repositorio es un **Showcase Técnico**. El código fuente, diseño y activ
 
 ### 📩 Contacto
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](TU_LINK_DE_LINKEDIN)
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](TU_LINK_DE_INSTAGRAM)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:TU_CORREO@EMAIL.COM)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/javalenciab90)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/javalenciab90)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:javalenciab90@gmail.com)
 
-**Jaime Valencia** *Mobile Software Developer | Especialista en Android & Compose Multiplatform*
+**Jaime Valencia** *Mobile Software Developer | Android & Compose Multiplatform*
