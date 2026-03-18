@@ -1,15 +1,15 @@
-# 🇨🇴 FitBoxGo: Optimiza tu Fuerza con Precisión
+# 🇨🇴 FitBoxGo: Optimiza la Fuerza con Precisión
 
-**FitBoxGo** es la herramienta definitiva para atletas que buscan eliminar las conjeturas en su entrenamiento de fuerza. Diseñada para centralizar tu progreso, la app automatiza los cálculos más complejos del gimnasio para que tú solo te enfoques en levantar.
+**FitBoxGo** es la herramienta definitiva para atletas que buscan eliminar las conjeturas en el entrenamiento de fuerza. Diseñada para centralizar el progreso, la aplicación automatiza los cálculos más complejos del gimnasio para permitir un enfoque total en el levantamiento.
 
 ---
 
 ### 🚀 Funcionalidades Principales
 
-* **Gestión Inteligente de RM (1RM):** Calcula tu Repetición Máxima de forma precisa basada en tus levantamientos actuales.
-* **Cálculo Automático de Porcentajes:** Obtén instantáneamente las cargas exactas para tus series de aproximación, hipertrofia o fuerza máxima.
-* **Calculadora de Discos Bidireccional (Kg/Lb):** La app te indica exactamente qué discos colocar en la barra. Compatible con **Kilogramos** y **Libras**, adaptándose a cualquier equipamiento.
-* **Sincronización en Tiempo Real:** Gracias a su arquitectura Cloud, tus récords se sincronizan instantáneamente entre dispositivos Android e iOS.
+* **Gestión Inteligente de RM (1RM):** Cálculo preciso de la Repetición Máxima basado en los levantamientos actuales.
+* **Cálculo Automático de Porcentajes:** Obtención instantánea de las cargas exactas para series de aproximación, hipertrofia o fuerza máxima.
+* **Calculadora de Discos Bidireccional (Kg/Lb):** Indicación exacta de los discos necesarios para la barra. Compatible con **Kilogramos** y **Libras**, adaptándose a cualquier equipamiento.
+* **Sincronización en Tiempo Real:** Gracias a una arquitectura Cloud, los récords se sincronizan instantáneamente entre dispositivos Android e iOS.
 
 > **FitBoxGo. Activa tu mejor versión.**
 
@@ -19,34 +19,34 @@
 
 [![Mira la Demo de FitBoxGo](https://img.youtube.com/vi/XLpzB0UJNzo/maxresdefault.jpg)](https://www.youtube.com/watch?v=XLpzB0UJNzo)
 
-> 💡 **Tip:** Haz clic en la imagen superior para ver el flujo completo de la aplicación, incluyendo la sincronización en tiempo real y el sistema de Onboarding.
+> 💡 **Tip:** Al hacer clic en la imagen superior se accede al flujo completo de la aplicación, incluyendo la sincronización en tiempo real y el sistema de Onboarding.
 
 #### 🕒 Guía de la Demo:
-* **0:00** - Iniciática de sesión -  Acepto términos y condiciones.
-* **0:24** - Ingreso un nuevo registro.
+* **0:00** - Inicio de sesión y aceptación de términos y condiciones.
+* **0:24** - Ingreso de un nuevo registro.
 * **0:35** - Sincronización Real-time (iOS Light Mode vs Android Dark Mode).
-* **1:00** - Eliminar un registo.
+* **1:00** - Eliminación de un registro.
 * **1:12** - Onboarding para uso de calculadora (Paso 1).
 * **1:23** - Onboarding para uso de calculadora (Paso 2).
 * **1:41** - Onboarding para uso de calculadora (Paso 3).
-* **1:51** - Visualización de discos (Kg ó lb).
-* **2:13** - Edición perfil.
-* **2:32** -  Navegación Menú lateral (Drawer menu).
-* **3:19** - Fin
+* **1:51** - Visualización de discos (Kg o Lb).
+* **2:13** - Edición de perfil.
+* **2:32** - Navegación mediante Menú lateral (Drawer menu).
+* **3:19** - Fin de la demostración.
 
-**¿Qué estás viendo en esta demo?**
-Observa la interoperabilidad entre un **iPhone (Light Mode)** y un emulador de **Android (Dark Mode)**. Al registrar un levantamiento, se muestra la sincronización con la base de datos en ambas pantallas sin latencia. La lógica compartida calcula automáticamente los porcentajes y la distribución de discos de forma instantánea.
+**¿Qué se observa en esta demo?**
+Se visualiza la interoperabilidad entre un **iPhone (Light Mode)** y un emulador de **Android (Dark Mode)**. Al registrar un levantamiento, se muestra la sincronización con la base de datos en ambas pantallas sin latencia. La lógica compartida calcula automáticamente los porcentajes y la distribución de discos de forma instantánea.
 
 #### **Guía de Usuario (Onboarding Contextual)**
-Para garantizar una curva de aprendizaje mínima, la primera vez que un atleta accede a la **Calculadora de Discos**, se activa un sistema de **Onboarding Dinámico**:
-* **Diálogos de Guía:** Se presentan componentes visuales no interactivos que resaltan las secciones clave de la pantalla.
-* **Flujo Paso a Paso:** Al marcar como "Entendido", el usuario realiza la acción e inmediatamente el sistema guía al usuario hacia la siguiente acción, asegurando que comprenda cómo interactuar con los cálculos de RM y la distribución de discos antes de su primer levantamiento.
+Para garantizar una curva de aprendizaje mínima, la primera vez que se accede a la **Calculadora de Discos**, se activa un sistema de **Onboarding Dinámico**:
+* **Diálogos de Guía:** Presentación de componentes visuales no interactivos que resaltan las secciones clave de la pantalla.
+* **Flujo Paso a Paso:** Al marcar como "Entendido", el sistema guía al usuario hacia la siguiente acción, asegurando la comprensión del funcionamiento de los cálculos de RM y la distribución de discos antes del primer levantamiento.
 
 ---
 
 ### 🛠️ Arquitectura y Stack Tecnológico
 
-Para garantizar que **FitBoxGo** sea escalable y robusta, he implementado una arquitectura de vanguardia que separa la lógica de negocio de la interfaz de usuario.
+Para garantizar que **FitBoxGo** sea escalable y robusta, se ha implementado una arquitectura de vanguardia que separa la lógica de negocio de la interfaz de usuario.
 
 #### **Arquitectura MVI (Model-View-Intent)**
 Patrón elegido para gestionar el estado de forma predecible:
@@ -63,7 +63,7 @@ La aplicación utiliza una arquitectura modularizada para maximizar la reutiliza
 * **`:data`:** Gestión de datos. Incluye `:service` (Firebase Cloud) y `:local` (Persistencia).
 * **`:features`:** Módulos independientes por funcionalidad (Login, Dashboard, Records).
 * **`:presentation`:** Lógica de vista reactiva bajo el patrón MVI.
-* **`:design-system`:** Librería visual propia en **Compose Multiplatform** para consistencia total.
+* **`:design-system`:** Librería visual propia en **Compose Multiplatform** para consistencia total. Incluye el motor de Onboarding dinámico.
 * **`:navigation`:** Gestión de flujo desacoplada entre pantallas.
 * **`:di`:** Inyección de dependencias centralizada con **Koin**.
 * **`:app-android` / `:app-ios`:** Puntos de entrada nativos de cada plataforma.
@@ -91,7 +91,9 @@ La aplicación utiliza una arquitectura modularizada para maximizar la reutiliza
 
 ---
 
-### 🚀 Disponibilidad
+### 🚀 Disponibilidad y Lanzamiento
+
+**FitBoxGo** inicia su camino enfocándose en la comunidad de atletas de **Colombia** 🇨🇴. Esta primera versión está totalmente optimizada en **español**, adaptándose al lenguaje y las necesidades de los boxes y gimnas
 
 ### 🚀 Disponibilidad y Lanzamiento
 
