@@ -42,6 +42,11 @@ Para garantizar una curva de aprendizaje mínima, la primera vez que se accede a
 * **Diálogos de Guía:** Presentación de componentes visuales no interactivos que resaltan las secciones clave de la pantalla.
 * **Flujo Paso a Paso:** Al marcar como "Entendido", el sistema guía al usuario hacia la siguiente acción, asegurando la comprensión del funcionamiento de los cálculos de RM y la distribución de discos antes del primer levantamiento.
 
+### **Diagrama Clean Architecture**
+
+<img width="1536" height="1024" alt="Diagram_clean_architecture" src="https://github.com/user-attachments/assets/790f771d-2b35-4023-a362-6deb5a9ae911" />
+
+
 ---
 
 ### 🛠️ Arquitectura y Stack Tecnológico
