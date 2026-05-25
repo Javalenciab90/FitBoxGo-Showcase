@@ -19,7 +19,7 @@
 
 Para facilitar la visualización inmediata del flujo de usuario, comparto estos recorridos cortos integrados:
 
-| Parte 1: Onboarding y Calculadora | Parte 2: Sincronización y WODs |
+| Parte 1: RM y Calculadora | Parte 2: Sincronización y WODs |
 | :---: | :---: |
 | ![Demo Part 1](https://github.com/user-attachments/assets/2c213f51-27bb-4f7c-a700-ae9629814a4e) | ![Demo Part 2](https://github.com/user-attachments/assets/38d15b9e-7900-4500-aa5c-b0e49c01e876) |
 
