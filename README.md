@@ -7,10 +7,11 @@
 ### 🚀 Funcionalidades Principales
 
 * **Gestión Inteligente de RM (1RM):** Cálculo preciso de la Repetición Máxima basado en los levantamientos actuales.
-* **Cálculo Automático de Porcentajes:** Obtención instantánea de las cargas exactas para series de aproximación, hipertrofia o fuerza máxima.
+* **Calculadora de Discos Dinámica:** Algoritmo avanzado que calcula la distribución exacta de discos basándose en el inventario real del usuario (configuración mediante *checkboxes*).
 * **Calculadora de Discos Bidireccional (Kg/Lb):** Indicación exacta de los discos necesarios para la barra. Compatible con **Kilogramos** y **Libras**, adaptándose a cualquier equipamiento.
-* **Sincronización en Tiempo Real:** Gracias a una arquitectura Cloud, los récords se sincronizan instantáneamente entre dispositivos Android e iOS.
-
+* **Firebase Remote Config:** Sistema de control remoto para forzar actualizaciones de versión y despliegue de configuraciones en tiempo real.
+* **Benchmarks WOD:** Módulo de seguimiento de rendimiento para *Workouts of the Day* con categorización por niveles (**RX, Intermediate, Scaled**) y soporte para métricas de tiempo o repeticiones.
+* **Sincronización Cloud:** Arquitectura basada en eventos con Firestore para una experiencia consistente entre Android e iOS.
 > **FitBoxGo. Activa tu mejor versión.**
 
 ---
@@ -51,12 +52,14 @@ Para garantizar una curva de aprendizaje mínima, la primera vez que se accede a
 
 ### 🛠️ Arquitectura y Stack Tecnológico
 
-Para garantizar que **FitBoxGo** sea escalable y robusta, se ha implementado una arquitectura de vanguardia que separa la lógica de negocio de la interfaz de usuario.
-
 #### **Arquitectura MVI (Model-View-Intent)**
-Patrón elegido para gestionar el estado de forma predecible:
-* **Estado Único:** La interfaz siempre refleja una única fuente de verdad.
-* **Flujo Unidireccional:** Facilita el seguimiento de acciones y la depuración del flujo de datos.
+Implementación de un flujo de datos unidireccional para garantizar una UI predecible y altamente testeable. [cite: 2]
+
+* **Domain Layer:** Contiene la lógica del negocio, incluyendo el motor de cálculo de discos y las reglas de validación de los WODs.
+* **Remote Config Integration:** Implementación de un servicio de escucha reactiva que compara versiones y dispara alertas de actualización mediante diálogos nativos.
+* **Design System:** Librería modular en **Compose Multiplatform** que gestiona tanto el Onboarding Dinámico como la adaptabilidad de temas (Light/Dark Mode).
+
+Para garantizar que **FitBoxGo** sea escalable y robusta, se ha implementado una arquitectura de vanguardia que separa la lógica de negocio de la interfaz de usuario.
 
 ---
 
@@ -80,7 +83,7 @@ La aplicación utiliza una arquitectura modularizada para maximizar la reutiliza
 * **Compose Multiplatform (CMP):** UI 100% compartida con rendimiento nativo en Android e iOS.
 * **Soporte Nativo de Temas:** Detección dinámica de **Dark Mode / Light Mode** mediante el `:design-system`.
 * **Kotlin Multiplatform (KMP):** Lógica de negocio y modelos compartidos.
-* **Firebase Ecosystem:** Authentication (Google Login) y Cloud Firestore (Real-time DB).
+* **Firebase Ecosystem:** Authentication (Google Login), Cloud Firestore (Real-time DB) y Remote Config.
 * **Koin:** DI ligera optimizada para proyectos multiplataforma.
 * **Corrutinas y Flow:** Motor de reactividad asíncrona para una interfaz fluida.
 
@@ -88,24 +91,13 @@ La aplicación utiliza una arquitectura modularizada para maximizar la reutiliza
 
 ---
 
-### 🚀 Hoja de Ruta (Roadmap)
+### 🚀 Disponibilidad
 
-* [ ] **📚 Biblioteca de WODs Clásicos:** Registro de marcas en entrenamientos icónicos (Fran, Amanda, etc.).
-* [ ] **🧘 Sección de Movilidad:** Guía visual de rutinas pre-entrenamiento.
-* [ ] **📊 Historial y Gráficos:** Análisis dinámico de la progresión de fuerza.
+**FitBoxGo** Enfocada en la comunidad de atletas fitness de **Colombia** 🇨🇴.
 
----
+[![App Store](https://img.shields.io/badge/App_Store-Download-007AFF?style=for-the-badge&logo=apple&logoColor=white)](https://apps.apple.com/app/fitboxgo/id6761392693)
 
-### 🚀 Disponibilidad y Lanzamiento
-
-**FitBoxGo** inicia su camino enfocándose en la comunidad de atletas de **Colombia** 🇨🇴. Esta primera versión está totalmente optimizada en **español**, adaptándose al lenguaje y las necesidades de los boxes y gimnasios locales.
-
-Actualmente en etapas finales de pruebas y proceso de aprobación oficial.
-
-| Plataforma | Estado |
-| :---: | :---: |
-| [![App Store](https://img.shields.io/badge/App_Store-Coming_Soon-007AFF?style=for-the-badge&logo=apple&logoColor=white)](#) | 🍏 En revisión por Apple. |
-| [![Google Play](https://img.shields.io/badge/Google_Play-Coming_Soon-34A853?style=for-the-badge&logo=google-play&logoColor=white)](#) | 🤖 En revisión por Google. |
+[![Google Play](https://img.shields.io/badge/Google_Play-Download-34A853?style=for-the-badge&logo=google-play&logoColor=white)](https://play.google.com/store/apps/details?id=org.javalenciab90.fitboxgo)
 
 ---
 
