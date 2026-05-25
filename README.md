@@ -15,46 +15,21 @@
 > **FitBoxGo. Activa tu mejor versión.**
 
 ---
+### 🎥 Demo: Recorrido de Funcionalidades
 
-### 🎥 Demo: Recorrido Completo y Arquitectura (3:19 min)
+Para facilitar la visualización inmediata del flujo de usuario, comparto estos recorridos cortos integrados:
 
-[![Mira la Demo de FitBoxGo](https://img.youtube.com/vi/XLpzB0UJNzo/maxresdefault.jpg)](https://www.youtube.com/watch?v=XLpzB0UJNzo)
+| Parte 1: Onboarding y Calculadora | Parte 2: Sincronización y WODs |
+| :---: | :---: |
+| ![Demo Part 1](https://github.com/user-attachments/assets/2c213f51-27bb-4f7c-a700-ae9629814a4e) | ![Demo Part 2](https://github.com/user-attachments/assets/38d15b9e-7900-4500-aa5c-b0e49c01e876) |
 
-> 💡 **Tip:** Al hacer clic en la imagen superior se accede al flujo completo de la aplicación, incluyendo la sincronización en tiempo real y el sistema de Onboarding.
-
-#### 🕒 Guía de la Demo:
-* **0:00** - Inicio de sesión y aceptación de términos y condiciones.
-* **0:24** - Ingreso de un nuevo registro.
-* **0:35** - Sincronización Real-time (iOS Light Mode vs Android Dark Mode).
-* **1:00** - Eliminación de un registro.
-* **1:12** - Onboarding para uso de calculadora (Paso 1).
-* **1:23** - Onboarding para uso de calculadora (Paso 2).
-* **1:41** - Onboarding para uso de calculadora (Paso 3).
-* **1:51** - Visualización de discos (Kg o Lb).
-* **2:13** - Edición de perfil.
-* **2:32** - Navegación mediante Menú lateral (Drawer menu).
-* **3:19** - Fin de la demostración.
-
-**¿Qué se observa en esta demo?**
-Se visualiza la interoperabilidad entre un **iPhone (Light Mode)** y un emulador de **Android (Dark Mode)**. Al registrar un levantamiento, se muestra la sincronización con la base de datos en ambas pantallas sin latencia. La lógica compartida calcula automáticamente los porcentajes y la distribución de discos de forma instantánea.
-
-#### **Guía de Usuario (Onboarding Contextual)**
-Para garantizar una curva de aprendizaje mínima, la primera vez que se accede a la **Calculadora de Discos**, se activa un sistema de **Onboarding Dinámico**:
-* **Diálogos de Guía:** Presentación de componentes visuales no interactivos que resaltan las secciones clave de la pantalla.
-* **Flujo Paso a Paso:** Al marcar como "Entendido", el sistema guía al usuario hacia la siguiente acción, asegurando la comprensión del funcionamiento de los cálculos de RM y la distribución de discos antes del primer levantamiento.
-
-### **Diagrama Clean Architecture**
-
-<img width="1536" height="1024" alt="Diagram_clean_architecture" src="https://github.com/user-attachments/assets/790f771d-2b35-4023-a362-6deb5a9ae911" />
-
-
----
 
 ### 🛠️ Arquitectura y Stack Tecnológico
 
 #### **Arquitectura MVI (Model-View-Intent)**
 Implementación de un flujo de datos unidireccional para garantizar una UI predecible y altamente testeable. [cite: 2]
 
+* **Data Layer:** Contiene las implementaciones de los servicios de Firebase (Autenticación, Firestore/Storage, Remote Config)
 * **Domain Layer:** Contiene la lógica del negocio, incluyendo el motor de cálculo de discos y las reglas de validación de los WODs.
 * **Remote Config Integration:** Implementación de un servicio de escucha reactiva que compara versiones y dispara alertas de actualización mediante diálogos nativos.
 * **Design System:** Librería modular en **Compose Multiplatform** que gestiona tanto el Onboarding Dinámico como la adaptabilidad de temas (Light/Dark Mode).
@@ -62,6 +37,13 @@ Implementación de un flujo de datos unidireccional para garantizar una UI prede
 Para garantizar que **FitBoxGo** sea escalable y robusta, se ha implementado una arquitectura de vanguardia que separa la lógica de negocio de la interfaz de usuario.
 
 ---
+
+### **Diagrama Clean Architecture**
+
+<img width="1536" height="1024" alt="Diagram_clean_architecture" src="https://github.com/user-attachments/assets/790f771d-2b35-4023-a362-6deb5a9ae911" />
+
+---
+
 
 ### 🏗️ Estructura Multi-modular
 
