@@ -1,3 +1,6 @@
+<!-- En README.md (Español) -->
+🇺🇸 [Read this in English](README_EN.md) | 🇪🇸 **Leer en Español**
+
 # 🇨🇴 FitBoxGo: Optimiza la Fuerza con Precisión
 
 **FitBoxGo** es la herramienta definitiva para atletas que buscan eliminar las conjeturas en el entrenamiento de fuerza. Diseñada para centralizar el progreso, la aplicación automatiza los cálculos más complejos del gimnasio para permitir un enfoque total en el levantamiento.
